@@ -1,0 +1,15 @@
+DEVINE LA CARTE ! — version de démonstration
+
+Contenu :
+- index.html : application web
+- sw.js : mise en cache de base pour une publication HTTPS
+
+Fonctions incluses : joueurs, sélection du joueur qui cherche et de celui qui fait deviner, choix obligatoire Enfant/Adulte avant chaque carte, proposition de point avec confirmation, scores et podium, téléchargement de cartes depuis Wikimedia Commons.
+
+Limites à connaître :
+- La reconnaissance vocale dépend du navigateur, de ses autorisations micro et souvent d'une connexion Internet. Elle ne reconnaît pas sûrement l'identité vocale : le joueur doit dire son prénom.
+- Les images téléchargées sont conservées dans les données de l'application, mais cette version les affiche comme titres et symbole générique ; l'affichage des vignettes des images externes n'est pas encore intégré à la carte.
+- Les résultats téléchargés de Wikimedia Commons ne sont pas triés de façon fiable selon l'âge : le choix enfant/adulte est provisoire et doit être vérifié avant usage avec des enfants.
+- Le service worker ne peut fonctionner qu'une fois le site servi sur HTTPS (ou localhost). Un fichier HTML ouvert directement n'est pas une PWA installable et ne garantit pas la reconnaissance vocale.
+
+Installation recommandée sur Samsung : publier les fichiers sur un hébergement HTTPS (par exemple GitHub Pages), puis ouvrir l'adresse dans Chrome > menu ⋮ > Ajouter à l'écran d'accueil / Installer l'application.
