@@ -1,15 +1,17 @@
-DEVINE LA CARTE ! — version de démonstration
+DEVINE LA CARTE !
 
-Contenu :
-- index.html : application web
-- sw.js : mise en cache de base pour une publication HTTPS
+Installation / mise a jour GitHub Pages :
+1. Envoyer les fichiers de ce dossier a la racine du depot GitHub.
+2. Pour mettre a jour un site existant, remplacer index.html et sw.js.
+3. Dans Chrome sur Android, ouvrir le site et actualiser la page. Si l'ancienne version reste affichee, fermer l'application et rouvrir le site apres quelques instants.
 
-Fonctions incluses : joueurs, sélection du joueur qui cherche et de celui qui fait deviner, choix obligatoire Enfant/Adulte avant chaque carte, proposition de point avec confirmation, scores et podium, téléchargement de cartes depuis Wikimedia Commons.
+Fonctionnement :
+- Ajouter les joueurs qui devineront.
+- La personne qui utilise le telephone mime la carte.
+- Choisir Enfant (4-6 ans) ou Adulte avant chaque carte.
+- Les autres joueurs disent leur prenom puis le mot.
+- La reconnaissance vocale propose un point ; il faut confirmer avant attribution.
+- Le bouton de confirmation manuelle permet de choisir un gagnant uniquement si necessaire.
+- Le telechargement de cartes necessite une connexion Internet.
 
-Limites à connaître :
-- La reconnaissance vocale dépend du navigateur, de ses autorisations micro et souvent d'une connexion Internet. Elle ne reconnaît pas sûrement l'identité vocale : le joueur doit dire son prénom.
-- Les images téléchargées sont conservées dans les données de l'application, mais cette version les affiche comme titres et symbole générique ; l'affichage des vignettes des images externes n'est pas encore intégré à la carte.
-- Les résultats téléchargés de Wikimedia Commons ne sont pas triés de façon fiable selon l'âge : le choix enfant/adulte est provisoire et doit être vérifié avant usage avec des enfants.
-- Le service worker ne peut fonctionner qu'une fois le site servi sur HTTPS (ou localhost). Un fichier HTML ouvert directement n'est pas une PWA installable et ne garantit pas la reconnaissance vocale.
-
-Installation recommandée sur Samsung : publier les fichiers sur un hébergement HTTPS (par exemple GitHub Pages), puis ouvrir l'adresse dans Chrome > menu ⋮ > Ajouter à l'écran d'accueil / Installer l'application.
+La reconnaissance vocale depend du navigateur et peut necessiter Internet. Elle n'identifie pas les voix de facon fiable : les joueurs doivent annoncer leur prenom.
