@@ -1,17 +1,11 @@
-DEVINE LA CARTE !
+DEVINE LA CARTE ! — VERSION 4
 
-Installation / mise a jour GitHub Pages :
-1. Envoyer les fichiers de ce dossier a la racine du depot GitHub.
-2. Pour mettre a jour un site existant, remplacer index.html et sw.js.
-3. Dans Chrome sur Android, ouvrir le site et actualiser la page. Si l'ancienne version reste affichee, fermer l'application et rouvrir le site apres quelques instants.
+Mise à jour GitHub Pages depuis Android :
+1. Extraire l'archive ZIP.
+2. Dans le dépôt GitHub, remplacer à la racine index.html, sw.js, manifest.json et icon.svg.
+3. Commit changes sur la branche main.
+4. Attendre le déploiement Pages puis actualiser le site. Si l'ancienne version persiste, effacer les données du site dans Chrome.
 
-Fonctionnement :
-- Ajouter les joueurs qui devineront.
-- La personne qui utilise le telephone mime la carte.
-- Choisir Enfant (4-6 ans) ou Adulte avant chaque carte.
-- Les autres joueurs disent leur prenom puis le mot.
-- La reconnaissance vocale propose un point ; il faut confirmer avant attribution.
-- Le bouton de confirmation manuelle permet de choisir un gagnant uniquement si necessaire.
-- Le telechargement de cartes necessite une connexion Internet.
+Fonctions : menu, édition des joueurs, nombre de tours 2/3/5/7/10, 1 à 100 cartes par tour, niveaux facile/moyen/difficile/challenge, contextes France/Brésil/international, langue, temps de 40 à 300 secondes par paliers de 15 secondes, tentative de récupération de cartes illustrées via Wikipédia, reconnaissance vocale et confirmation avant attribution du point.
 
-La reconnaissance vocale depend du navigateur et peut necessiter Internet. Elle n'identifie pas les voix de facon fiable : les joueurs doivent annoncer leur prenom.
+Limites : reconnaissance vocale dépend du navigateur/service vocal et peut nécessiter Internet. Les résultats de recherche Wikimedia sont des pages de Wikipédia, pas une banque éditoriale de cartes de mime vérifiée par âge ; les images ne sont pas garanties hors ligne. Les traductions du paquet de secours sont partielles et la banque locale est limitée. Le paquet en ligne peut renvoyer moins de cartes que demandé.
